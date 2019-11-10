@@ -6,7 +6,7 @@
 /*   By: asubrama <asubrama@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 11:43:57 by asubrama          #+#    #+#             */
-/*   Updated: 2019/11/10 01:08:58 by asubrama         ###   ########.fr       */
+/*   Updated: 2019/11/10 02:12:45 by asubrama         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,6 @@ char	*ft_strtrim(char const *s)
 	if (!(str = ft_strnew(j)))
 		return (NULL);
 	ft_strncpy(str, (s + i), j);
-	str == '\0';
+	str[i] = '\0';
 	return (str);
 }
